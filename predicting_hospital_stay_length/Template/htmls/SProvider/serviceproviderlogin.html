@@ -1,0 +1,126 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<title>Login</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<head>
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background: url("{% static 'bg.jpg' %}");
+			background-color:#eee;}
+			.container-fluid {padding:50px;}
+			.container{background-color:white;padding:50px;   }
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+		.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+        .style2 {
+	font-family: 'Righteous', cursive;
+	color: #FF0000;
+	font-weight: bold;
+}
+.style5 {
+	color: #FF0099;
+	font-weight: bold;
+}
+        .style6 {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-style: italic;
+}
+        .style8 {color: #00FF66}
+        </style>
+	</head>
+	<body>
+	<div class="container-fluid">
+		<div>
+			<h2 class="text-center style1" id="title">EXPLAINBLE AI FOR HOSPITALIZATION DURATION PREDICTIONS
+			</h2>
+			 <p class="text-center"> <span class="style5"><small id="passwordHelpInline" class="text-muted">Healthcare decision support systems, explainable artificial intelligence, machine learning,
+XGBOOST...
+
+
+          </small></span> </p>
+ 			<hr>
+			<div class="row">
+
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+
+				<div class="col-md-5">
+ 				 		<form method="POST" role="form">
+							{% csrf_token %}
+
+						<fieldset>
+                             {% load static %}
+						
+							<p class="style2"> Login Service Provider: </p>
+							<table width="460" height="200" border="10">
+                              <tr>
+                                <td height="35" colspan="2" bgcolor="#FF0000"><div align="center" class="style6"><img src="{% static '/login.jpg' %}" alt="My image" width="100"> Enter Login Details Here !!! </div></td>
+                              </tr>
+                              <tr>
+                                <td width="191"><div align="center" class="style1">Enter Username </div></td>
+                                <td width="253"><div align="center"><span class="form-group">
+                                  <input type="text" name="username"   placeholder="User Name" required>
+                                </span></div></td>
+                              </tr>
+                              <tr>
+                                <td><div align="center" class="style1">Enter Password </div></td>
+                                <td><div align="center"><span class="form-group">
+                                  <input type="password" name="password"   placeholder="Password" required>
+                                </span></div></td>
+                              </tr>
+                              <tr>
+                                <td><div align="center"></div></td>
+                                <td><div align="center">
+                                  <input type="submit" name="submit1"  class="style5" value="Login">
+                                </div></td>
+                              </tr>
+                              <tr>
+                                <td height="71" colspan="2" bordercolor="#FFFF00" bgcolor="#FF0000"><div align="center"><span class="style8"><a href="{% url 'login' %}">User Login</a>
+                                </button>
+                                </span></div></td>
+                              </tr>
+                            </table>
+							<p class="style2">&nbsp;</p>
+							<p class="style2">&nbsp;</p>
+							<p class="style2">&nbsp;</p>
+							<div class="form-group"></div>
+							<div class="form-group"></div>
+							<div></div>
+ 						</fieldset>
+						<br><br>
+						<button class="btn btn-lg ">
+ 				 		</form>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	</body>
+
+
+</html>

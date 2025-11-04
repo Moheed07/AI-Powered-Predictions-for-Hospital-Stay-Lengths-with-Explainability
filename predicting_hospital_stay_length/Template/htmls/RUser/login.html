@@ -1,0 +1,143 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<style type="text/css">
+<!--
+.style9 {color: #FFFFFF}
+-->
+</style>
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<title>Login</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<head>
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background: url("{% static 'bg.jpg' %}");
+			}
+			.container-fluid {padding:50px;}
+			.container{background-color:white;padding:50px;   }
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+		.style1 {color: #FF0000}
+        .style4 {color: #FF00FF; font-weight: bold; }
+        .style5 {
+	font-family: 'Righteous', cursive;
+	color: #FF0000;
+	font-weight: bold;
+}
+        .style7 {color: #0000FF}
+        .style8 {
+	color: #FF0000;
+	font-style: italic;
+	font-weight: bold;
+}
+        </style>
+	</head>
+	<body>
+	<div class="container-fluid">
+		<div >
+			<h2 class="style1 text-center" id="title"><strong>EXPLAINBLE AI FOR HOSPITALIZATION DURATION PREDICTIONS
+</strong></h2>
+			 <p class="text-center">
+				<span class="style4"><small id="passwordHelpInline" class="text-muted">Healthcare decision support systems, explainable artificial intelligence, machine learning,
+XGBOOST..
+
+ </small></span> </p>
+ 			<hr>
+			<div class="row">
+				<div>
+ 					<form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+							<p class="text-uppercase pull-center">&nbsp;</p>
+					  </fieldset>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+
+				<div class="col-md-5">
+ 				 		<form method="POST" role="form">
+							{% csrf_token %}
+
+						<fieldset>
+                             {% load static %}
+						
+							<p class="style5">  </p>
+							<h2 align="center" class="style1">User Login !!!</h2>
+							<table width="420" border="10" align="center">
+                              <tr>
+                                <td height="42" colspan="2" bgcolor="#FF0000"><div align="center" class="style9"><strong><img src="{% static '/login.jpg' %}" alt="My image">Enter Your Login Details Here !!! </strong></div></td>
+                              </tr>
+                              <tr>
+                                <td width="153"><div align="center" class="style8">Enter Username </div></td>
+                                <td width="251"><div align="center"><span class="form-group">
+                                  <input type="text" name="username"   placeholder="User Name" required>
+                                </span></div></td>
+                              </tr>
+                              <tr>
+                                <td><div align="center" class="style8">Enter Password </div></td>
+                                <td><div align="center"><span class="form-group">
+                                <input type="password" name="password"   placeholder="Password" required>
+                                </span></div></td>
+                              </tr>
+                              <tr>
+                                <td><div align="center"></div></td>
+                                <td><div align="center">
+                                  <input type="submit" name="submit1"  class="style4" value="Login">
+                                </div></td>
+                              </tr>
+                              <tr>
+                                <td colspan="2" bgcolor="#FF0000">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td colspan="2" bgcolor="#FFCCCC"><p><span class="style5 style7">Click On Below Operations : </span></p>
+                                  <p><span class="style9"><a href="{% url 'serviceproviderlogin' %}">SERVICE PROVIDER</a>
+                                  </button>
+                                  <span class="style1"> ||                                  </span><a href="{% url 'Register1' %}"><img src="{% static '/Register1.png' %}" alt="My image"> REGISTER</a></span>                                  </p>
+                                <p>&nbsp;</p></td>
+                              </tr>
+                            </table>
+							<p class="style5">&nbsp;</p>
+							<p class="style5">&nbsp;</p>
+							<div class="form-group"></div>
+							<div class="form-group"></div>
+							<div></div>
+							</br>
+
+							<p class="style5">&nbsp;</p>
+
+							<div>
+
+							<button class="btn btn-lg ">
+							</div>
+ 						</fieldset>
+				</form>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	</body>
+
+
+</html>

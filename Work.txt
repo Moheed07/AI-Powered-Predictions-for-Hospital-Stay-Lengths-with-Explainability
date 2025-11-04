@@ -1,0 +1,41 @@
+Predicting Hospital Stay Length Using Explainable Machine Learning
+
+
+Healthcare decision support systems, explainable artificial intelligence, machine learning,
+XGBOOST.
+
+
+IEEE Transaction Access on Machine Learning,Volume:12,Issue Date:9.July.2024
+
+
+Predicting_Hospital_Stay_Length
+
+
+
+predicting_hospital_stay_length
+
+
+hospital_stay_length_prediction
+
+
+
+Members
+--------
+Fid	
+Name	
+Age	
+Gender	
+BloodType	
+MedicalCondition	
+DateofAdmission	
+Doctor	
+Hospital	
+InsuranceProvider	
+RoomNumber	
+AdmissionType	
+Medication	
+TestResults
+Prediction
+
+
+Predict_Hospital_Stay_Length_Type
