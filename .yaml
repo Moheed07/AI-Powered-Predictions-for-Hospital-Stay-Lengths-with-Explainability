@@ -1,0 +1,18 @@
+
+---
+
+## 🧠 Tech Stack
+
+- **Python** (Pandas, NumPy, Scikit-learn, XGBoost)  
+- **SHAP** for explainability  
+- **Matplotlib / Seaborn** for data visualization  
+- **Flask / Streamlit** (optional) for web deployment  
+
+---
+
+## 📈 Use Case
+
+Designed for hospitals and healthcare organizations aiming to adopt AI-driven decision-making to improve patient management. Helps minimize overstay/understay issues by providing transparent, explainable predictions for hospital resource planning.
+
+---
+
